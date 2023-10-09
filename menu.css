@@ -1,0 +1,802 @@
+:root{
+    --colorlight:rgb(212, 187, 187);
+    --colorlight2:white;
+    --colordark:rgb(54, 48, 48);
+    --colorshadow:rgba(211, 211, 211, 0.349);
+}
+
+@font-face{
+    font-family: SodoSans-Bold;
+    src: url(./Imagens/Fonts/SoDoSans-Bold.ttf)
+}
+
+@font-face{
+    font-family: SodoSans-Regular;
+    src: url(./Imagens/Fonts/SoDoSans-Regular.ttf)
+}
+@font-face {
+    font-family: Pike;
+    src: url(./Imagens/Fonts/pike-bold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial;
+    color: var(--colorlight2);
+    
+}
+
+img#logo{
+    width: 145px;
+    height: 80px;
+    position: absolute;
+    left: -15px;
+    top: 3px;
+}
+
+.header,
+.navegacao_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: var(--colorlight2);
+    box-shadow: 1px 1px 4px var(--colordark);
+    height: 90px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.navegacao_header{
+    gap: 50px;
+}
+
+
+a#snavega{
+    position: absolute;
+    left: 130px;
+    top: 35.7px;
+    text-decoration: none;
+    border-bottom: 7px solid #00704A;
+    padding-bottom: 28px;
+    display: inline-block;
+}
+
+
+a#tnavega{
+    position: absolute;
+    left: 200px;
+}
+
+
+.navegacao_header a{
+    text-decoration: none;
+    color: var(--colordark);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.active{
+    font-family: SoDoSans-Bold;
+    text-decoration: none;
+}
+.active:hover{
+    color: rgb(36, 201, 36);
+    text-shadow: rgb(4, 173, 4) 0.1em 0.5em 0.9em;
+    transition: 0.2s;
+}
+
+
+#logar {
+    background-color:transparent;
+    color: rgb(0, 0, 0);
+    width: 90px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: black;
+    border: 1px solid black;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    position: absolute;
+    right: 120px;
+    top: 28px;
+}
+
+#logar:hover{
+    background-color:rgba(76, 92, 76, 0.575);
+    color: black;
+    border-color: black;
+    border-width: 1px;
+
+
+}
+#logar a{
+    color: black    ;
+    text-decoration: none;
+}
+
+#Cadastrar {
+    background-color:black;
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: black;
+    border: 1px solid black;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    position: absolute;
+    right: 15px;
+    top: 28px;
+}
+
+#Cadastrar:hover{
+    background-color:rgba(76, 92, 76, 0.575);
+    color: black;
+    border-color: black;
+    border-width: 1px;
+
+}
+
+#Cadastrar a{
+    color: white;
+    text-decoration: none;
+}
+
+#local {
+    font-family: SoDoSans-Bold;
+    position: absolute;
+    right: 230px;
+    border: none;
+    background-color: var(--colorlight2);
+    
+}
+
+#local :hover{
+    color: rgb(19, 226, 36);
+    transition: 1.6s;
+}
+
+
+#menu_navegation{
+    background-color: rgba(243, 239, 239, 0.527);
+    height: 50px;
+    border-bottom: 2px solid var(--colorshadow) ;
+    border-top: 2px solid var(--colorshadow) ;
+}
+
+
+/* Menu principal ( lado direito ) */
+.menu_list {
+    text-decoration: none;
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 10pt;
+
+}
+.menu_list:hover{
+    text-decoration: none;
+    border-bottom: 1px solid var(--colordark);
+    padding:2px;
+    display: inline-block;
+
+}
+
+#menu_p{
+    position: absolute;
+    left: 130px;
+    top: 106px;
+}
+#menu_f{
+    position: absolute;
+    left: 250px;
+    top: 106px;
+    
+}
+#menu_fa{
+    position: absolute;
+    left: 330px;
+    top: 106px;
+    
+}
+
+
+#main_menu{
+    width: 71.5%;
+    height: 700px;
+    position: absolute;
+    right: 00px;
+    background-color: white;
+}
+#menu_h1{
+    color: var(--colordark);
+    font-family: SoDoSans-Bold;
+    font-size: 25pt;
+    position: absolute;
+    top: 50px;
+    left: 28px;
+}
+#menu_h2{
+    color: var(--colordark);
+    font-family: SoDoSans-Bold;
+    font-size: 18pt;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+}
+#svg_risco{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    
+}
+
+.main_menu_options{
+    font-family: SoDoSans-Regular;
+    color: black;
+    font-size: 13pt;
+}
+#oleato{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+#hot_coffes{
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+#hot_teas{
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+#hot_drinks{
+    position: absolute;
+    top: 350px;
+    left: 550px;
+}
+#fra_b_b{
+    position: absolute;
+    top: 450px;
+    left: 200px;
+}
+#cold_coffes{
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+#iced_teas{
+    position: absolute;
+    top: 580px;
+    left: 200px;
+}
+#cold_drinks{
+    position: absolute;
+    top: 580px;
+    left: 550px;
+}
+#menu_h2_food{
+    color: var(--colordark);
+    font-family: SoDoSans-Bold;
+    font-size: 18pt;
+    position: absolute;
+    top: 700px;
+    left: 30px;
+}
+#svg_risco2{
+    position: absolute;
+    top: 750px;
+    left: 30px; 
+}
+#hot_break{
+    position: absolute;
+    top: 820px;
+    left: 200px;
+}
+#out_yog{
+    position: absolute;
+    top: 820px;
+    left: 550px;
+}
+#bakery{
+    position: absolute;
+    top: 920px;
+    left: 200px;
+}
+#lunch{
+    position: absolute;
+    top: 920px;
+    left: 550px;
+}
+#snacks_sweets{
+    position: absolute;
+    top: 1000px;
+    left: 200px;
+}
+
+
+#menu_h2_ahc{
+    color: var(--colordark);
+    font-family: SoDoSans-Bold;
+    font-size: 18pt;
+    position: absolute;
+    top: 1100px;
+    left: 40px;
+}
+
+#svg_risco3{
+    position: absolute;
+    top:1140px;
+    left: 30px;
+}
+#whole_bean{
+    position: absolute;
+    top: 1200px;
+    left: 200px;
+}
+#via_inst{
+    position: absolute;
+    top: 1200px;
+    left: 550px;
+}
+
+
+#menu_h2_merch{
+    color: var(--colordark);
+    font-family: SoDoSans-Bold;
+    font-size: 18pt;
+    position: absolute;
+    top: 1300px;
+    left: 40px;
+}
+#svg_risco4{
+    position: absolute;
+    top:1340px;
+    left: 30px
+}
+#cold_cups{
+    position: absolute;
+    top: 1400px;
+    left: 200px;
+}
+#tumblers{
+    position: absolute;
+    top: 1400px;
+    left: 550px;
+}
+#mugs{
+    position: absolute;
+    top: 1500px;
+    left: 200px;
+}
+
+#others{
+    position: absolute;
+    top: 1500px;
+    left: 550px;
+}
+
+/*Segunda Div (Lado esquerdo da tela)*/
+#menu_lists{
+    width: 28.5%;
+    position: absolute;
+    left: 0px;
+    background-color: white;
+    height: 700px;
+}
+
+#menu_dr{
+    color: black;
+    font-family: SoDoSans-Bold;
+    font-size: 13pt;
+    position: absolute;
+    left: 130px;
+    top: 60px;
+}
+
+.drinks_list{
+    color: rgb(107, 105, 105);
+    font-family: SoDoSans-Regular;
+    position: relative;
+    left: 120px;
+    top: 100px;
+    padding: 10px;
+
+}
+.drinks_list:hover{
+    color:#02b67a ;
+
+}
+
+.food_list{
+    color: rgb(107, 105, 105);
+    font-family: SoDoSans-Regular;
+    position: relative;
+    left: 120px;
+    top: 40px;
+    padding: 10px;
+}
+.food_list:hover{
+    color:#02b67a;
+}
+
+#menu_fo{
+    color: black;
+    font-family: SoDoSans-Bold;
+    font-size: 14pt;
+    position: absolute;
+    left: 130px;
+    top: 460px;
+}
+.two_ahc{
+    color: rgb(107, 105, 105);
+    font-family: SoDoSans-Regular;
+    position: relative;
+    left: 130px;
+    top: 30px;
+    padding: 2px;
+    text-decoration: none;
+}
+.two_ahc:hover{
+    color:#02b67a;
+}
+#menu_ahc {
+    color: black;
+    font-family: SoDoSans-Bold;
+    font-size: 13pt;
+    position: absolute;
+    left: 130px;
+    top: 710px;
+}
+
+#menu_merch{
+    color: black;
+    font-family: SoDoSans-Bold;
+    font-size: 14pt;
+    position: absolute;
+    top: 830px;
+    left:130px ;
+}
+.merch_products {
+    color: rgb(107, 105, 105);
+    font-family: SoDoSans-Regular;
+    padding: 0.5px;
+    position: relative;
+    left: 130px;
+    top: 30px;
+}:hover{
+    color:#02b67a; ;
+}
+
+#sbg_risco5{
+    position: absolute;
+    left: 0px;
+    top: 1700px;
+}
+
+/* Final pAGE */
+
+#final_page{
+    position: absolute;
+    top: 1700px;
+}
+
+#About{
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 15pt;
+;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #023625;
+    height: 100px;
+}
+
+#pid{
+    font-family: SoDoSans-Regular;
+    color: rgb(184, 182, 182);
+    position: absolute;
+    left: 400px;
+    top: 25px;
+    
+}
+#escolha_loja{
+    font-family: SoDoSans-Bold;
+    color: white;
+    position: absolute;
+    left: 400px;
+    top: 50px;
+}
+
+#seta_svg{
+    color: white;
+    position: absolute;
+    left: 620px;
+    top: 40px;
+}
+
+#bag_svg{
+    color: white;
+    position: absolute;
+    left: 920px;
+    top: 40px;
+}
+
+.about_us{
+    color: rgb(150, 150, 150);
+    position: relative;
+    padding: 10px;
+    left: 150px;
+    top: 80px;
+    font-size: 14pt;
+}
+
+#carer{
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 15pt;
+}
+.carr{
+    color: rgb(150, 150, 150);
+    position: relative;
+    padding: 10px;
+    left: 350px;
+    bottom: -80px;
+    font-size: 14pt;
+}
+
+#social_imp{
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 15pt;
+}
+
+.so_impact{
+    color: rgb(150, 150, 150);
+    position: relative;
+    padding: 10px;
+    left: 0px;
+    bottom: -45px;
+    font-size: 14pt;
+}
+
+#fbp{
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 15pt;
+}
+
+.fbpp{
+    color: rgb(150, 150, 150);
+    position: relative;
+    padding: 10px;
+    left: 0px;
+    bottom: -45px;
+    font-size: 14pt;  
+}
+
+.ul_lists{
+    
+    width: 200px;
+    height: 400px;
+}
+
+#oap{
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 15pt;
+}
+
+.oap_list{
+    color: rgb(150, 150, 150);
+    position: relative;
+    padding: 10px;
+    left: 0px;
+    bottom: -45px;
+    font-size: 14pt;
+}
+
+.modified{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 13pt;
+    position: relative;
+    bottom: -85px;
+    left: 150px;
+
+}
+
+#last_thing{
+    color: grey;
+    position: absolute;
+    bottom: -90px;
+    left: 155px;
+}
+
+.img_logos{
+    width: 80px;
+    height: 80px;
+    border-radius: 90px;
+    
+}
+
+
+
+
+
+/* Resizing configurations */
+@media screen and (max-width:768px){
+    .list_buttons{
+        display: block;
+    }
+    
+
+    .navegacao_header{
+        display: none;
+}
+
+    #logar, #Cadastrar{
+        display: none;
+    }
+
+    #menu_lists{
+        display: none;
+    }
+
+    #pid{
+        position: absolute;
+        left: 20%;
+        top: 10%;
+    }
+    #escolha_loja{
+        position: absolute;
+        left: 20%;
+        top: 35%;
+    }
+    #svg_risco5{
+        position: absolute;
+        left: -72%;
+        top: -15%;
+    }
+    #bag_svg{
+        position: absolute;
+        left: 80%;
+        width: 70px;
+        top: 30%;
+    }
+    
+    #menu_h1{
+        position: absolute;
+        left: -20%;
+    }
+    #menu_h2{
+        position: absolute;
+        left: -20%;
+    }
+    #svg_risco{
+     position: absolute;
+     left: -20%;
+     width: 100%;
+    }
+
+    #after_click{
+        background-color:rgb(243, 243, 243);
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 200px;
+        display: none;
+        
+}
+    .after_click_h1{
+        font-family: SoDoSans-Bold;
+        text-decoration: none;
+        color: var(--colordark);
+        font-size: 14pt;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        top: 25px;
+        text-shadow: rgba(0, 0, 0, 0.637) 0.1em 0.2em 1.0em;
+    }
+    .after_click_h1 a{
+        text-decoration: none;
+        color: var(--colordark);
+    }
+    .after_click_h1 a:hover{
+        color: rgb(36, 201, 36);
+        text-shadow: rgb(4, 173, 4) 0.1em 0.5em 0.9em;
+        transition: 0.2s;
+    }
+
+    #btn_configs1{
+        background-color:transparent;
+        color: rgb(0, 0, 0);
+        width: 90px;
+        height: 35px;
+        border-radius: 30px;
+        border-color: black;
+        border: 1px solid black;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        position: absolute;
+        right: 26%;
+        top:30%;
+    }
+
+    #btn_configs1:hover{
+        background-color:rgba(76, 92, 76, 0.575);
+        color: black;
+        border-color: black;
+        border-width: 1px;
+
+    }
+    #btn_configs1 a{
+        color: black    ;
+        text-decoration: none;
+    }
+    }
+
+    #btn_configs2{
+        background-color:black;
+        color: rgb(255, 255, 255);
+        width: 90px;
+        height: 35px;
+        border-radius: 30px;
+        border-color: black;
+        border: 1px solid black;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        position: absolute;
+        right: 26%;
+        top: 40%;
+    }
+
+    #btn_configs2:hover{
+        background-color:rgba(76, 92, 76, 0.575);
+        color: black;
+        border-color: black;
+        border-width: 1px;
+
+    }
+
+    #btn_configs2 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
+
+    #tracinho:active{
+        color: rgb(0, 255, 0);
+    }
+    xiss:active{
+        color: red;
+    }
+
+@keyframes showSideBar{
+    from{display: none;}
+    to{display: block;}
+}
+
+

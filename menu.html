@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <div class="header" id="header">
+            <button onclick="SideBarAni()" class="list_buttons" id="tracinho">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="position: absolute; right:30px; top: 35px;">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <button id="logar">
+                <a href="https://www.starbucks.com/account/signin?ReturnUrl=%2F">Logar</a>
+            </button>
+            <button id="Cadastrar">
+                <a href="https://www.starbucks.com/account/create">Cadastrar</a>
+            </button>
+            <div class="logo_header" id="logo_header">
+               <a href="index.html"><img id="logo" src="./Imagens/download-removebg-preview (6).png" alt="Logo Starbucks"></a>
+            </div>
+            <div class="navegacao_header">
+                <button id="local">
+                    <a href="https://www.starbucks.com/store-locator"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-signpost" viewBox="0 0 16 16">
+                        <path d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0zM12.532 5l1.666 2-1.666 2H2V5h10.532z"/>
+                      </svg>
+                      <p>LOJAS</p>  
+                    </a>
+                </button>
+                <a id="snavega"  href="menu.html" class="active">MENU</a>
+                <a id="tnavega" href="rewards.html" class="active">RECOMPESAS</a>
+    
+            </div>
+        </div>
+        </header>
+
+        
+        <div id="menu_navegation">
+            <nav id="navegacao_menu">
+                <a href="" class="menu_list" id="menu_p">Todos produtos</a>
+                <a href="" class="menu_list" id="menu_f">Featured</a>
+                <a href="" class="menu_list" id="menu_fa">Favoritados</a>
+            </nav>
+        </div>
+
+        <div id="main_menu">
+            <h1 id="menu_h1"> Menu</h1>
+                <section id="main_menu_drinks">
+                    <h2 id="menu_h2">Drinks</h2>
+                    <svg width="620px" height="10px" id="svg_risco">
+                        <rect x="0" y="1" width="1500" height="1" fill="rgba(211, 211, 211, 0.800)" />
+                    </svg>
+                    <a href="https://www.starbucks.com/menu/drinks/oleato"><img src="./Imagens/Nova pasta/new-starbucks-oleatotm-olive-oil-coffee-drinks.webp" alt="Oleato" class="img_logos" style="position: absolute; left: 90px; top: 220px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/hot-coffees"><img src="./Imagens/Nova pasta/hot-coffes.jpeg" alt="" class="img_logos" style="position: absolute; left: 450px; top: 220px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/hot-teas"><img src="./Imagens/Nova pasta/hot-teas.jpeg" alt="" class="img_logos" style="position: absolute;left: 90px; top: 320px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/hot-drinks"><img src="./Imagens/Nova pasta/hot-drinks.jpeg" alt="" class="img_logos" style="position: absolute;left: 450px; top: 320px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/frappuccino-blended-beverages"><img src="./Imagens/Nova pasta/Frappuccino® Blended Beverages.jpeg" alt="" class="img_logos" style="position: absolute;left: 90px; top: 430px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/cold-coffees"><img src="./Imagens/Nova pasta/cold-coffes.jpeg" alt="" class="img_logos" style="position: absolute;
+                    left: 450px; top: 430px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/iced-teas"><img src="./Imagens/Nova pasta/iced-teas.jpeg" alt="" class="img_logos" style="position: absolute;left: 90px; top: 550px;"></a>
+                    <a href="https://www.starbucks.com/menu/drinks/cold-drinks"><img src="./Imagens/Nova pasta/cold-drinks.jpeg" alt="" class="img_logos" style="position: absolute;
+                    left: 450px; top: 550px;"></a>
+
+
+                    <a href="https://www.starbucks.com/menu/drinks/oleato" id="oleato" style="text-decoration: none;" class="main_menu_options"> Oleato™</a>
+                    <a href="https://www.starbucks.com/menu/drinks/hot-coffees" id="hot_coffes" style="text-decoration: none;" class="main_menu_options">Hot Coffes</a>
+                    <a href="https://www.starbucks.com/menu/drinks/hot-teas" id="hot_teas" style="text-decoration: none;" class="main_menu_options">Hot Teas</a>
+                    <a href="https://www.starbucks.com/menu/drinks/hot-drinks" id="hot_drinks" style="text-decoration: none;" class="main_menu_options">Hot Drinks</a>
+                    <a href="https://www.starbucks.com/menu/drinks/frappuccino-blended-beverages" id="fra_b_b" style="text-decoration: none;" class="main_menu_options">Frappuccino <br>Blended Beverages</a>
+                    <a href="https://www.starbucks.com/menu/drinks/cold-coffees" id="cold_coffes" style="text-decoration: none;" class="main_menu_options">Cold Coffes</a>
+                    <a href="https://www.starbucks.com/menu/drinks/iced-teas" id="iced_teas" style="text-decoration: none;" class="main_menu_options">Iced Teas</a>
+                    <a href="https://www.starbucks.com/menu/drinks/cold-drinks" id="cold_drinks" style="text-decoration: none;" class="main_menu_options">Cold Drinks</a>
+                </section>
+
+               <section id="main_menu_foods">
+                    <h2 id="menu_h2_food">Foods</h2>
+                    <svg width="620px" height="10px" id="svg_risco2">
+                        <rect x="0" y="1" width="1500" height="1" fill="rgba(211, 211, 211, 0.800)" />
+                    </svg>
+                    <a href="https://www.starbucks.com/menu/food/hot-breakfast"><img src="./Imagens/Nova pasta/hot-breakfast.jpeg" alt="" class="img_logos" style="position: absolute; left: 90px; top: 790px; "></a>
+                    <a href="https://www.starbucks.com/menu/food/oatmeal-yogurt"><img src="./Imagens/Nova pasta/out-yog.jpeg" alt="" class="img_logos" style="position: absolute; left: 450px; top: 790px; "></a>
+                    <a href="https://www.starbucks.com/menu/food/bakery"><img src="./Imagens/Nova pasta/bakery.jpeg" alt="" class="img_logos" style="position: absolute; left: 90px; top: 890px; "></a>
+                    <a href="https://www.starbucks.com/menu/food/lunch"><img src="./Imagens/Nova pasta/lunch.jpeg" alt="" class="img_logos" style="position: absolute; left: 450px; top: 890px; "></a>
+                    <a href="https://www.starbucks.com/menu/food/snacks-sweets"><img src="./Imagens/Nova pasta/stack.jpeg" alt="" class="img_logos" style="position: absolute; left: 90px; top: 980px; "></a>
+
+
+                  <a href="https://www.starbucks.com/menu/food/hot-breakfast" id="hot_break" style="text-decoration: none;" class="main_menu_options">Hot Breakfast</a>
+                  <a href="https://www.starbucks.com/menu/food/oatmeal-yogurt" id="out_yog" style="text-decoration: none;" class="main_menu_options">Outmeal & Yogurt</a>
+                  <a href="https://www.starbucks.com/menu/food/bakery" id="bakery" style="text-decoration: none;" class="main_menu_options">Bakery</a>
+                  <a href="https://www.starbucks.com/menu/food/lunch" id="lunch" style="text-decoration: none;" class="main_menu_options">Lunch</a>
+                  <a href="https://www.starbucks.com/menu/food/snacks-sweets" id="snacks_sweets" style="text-decoration: none;" class="main_menu_options">Snacks & Sweets</a>
+                </section> 
+
+                <section id="main_menu_ahc">
+                    <h2 id="menu_h2_ahc">At Home Coffe</h2>
+                    <svg width="630px" height="10px" id="svg_risco3">
+                        <rect x="0" y="1" width="1500" height="1" fill="rgba(211, 211, 211, 0.800)" />
+                    </svg>
+                    <a href="https://www.starbucks.com/menu/at-home-coffee/whole-bean"> <img src="./Imagens/Nova pasta/whole-bean.jpeg" alt="" class="img_logos" style="position: absolute; left: 90px; top: 1170px;" ></a>
+                    <a href="https://www.starbucks.com/menu/at-home-coffee/via-instant"> <img src="./Imagens/Nova pasta/via-instant.jpeg" alt="" class="img_logos" style="position: absolute; left: 450px; top: 1170px;" ></a>
+
+
+                  <a href="https://www.starbucks.com/menu/at-home-coffee/whole-bean" id="whole_bean" style="text-decoration: none;" class="main_menu_options">Whole Bean</a>
+                  <a href="https://www.starbucks.com/menu/at-home-coffee/via-instant" id="via_inst" style="text-decoration: none;" class="main_menu_options">VIA® Instant</a>
+                </section> 
+
+                <section id="main_menu_merch">
+                    <h2 id="menu_h2_merch">Merchandise</h2>
+                    <svg width="630px" height="10px" id="svg_risco4">
+                        <rect x="0" y="1" width="1500" height="1" fill="rgba(211, 211, 211, 0.800)" />
+                    </svg>
+                    <a href="https://www.starbucks.com/menu/merchandise/cold-cups"> <img src="./Imagens/Nova pasta/cold-cups.jpeg" alt="" class="img_logos" style="position: absolute; left: 90px; top: 1370px;" ></a>
+                    <a href="https://www.starbucks.com/menu/merchandise/tumblers"> <img src="./Imagens/Nova pasta/tumblers.jpeg" alt="" class="img_logos" style="position: absolute; left: 450px; top: 1370px;" ></a>
+                    <a href="https://www.starbucks.com/menu/merchandise/mugs"> <img src="./Imagens/Nova pasta/mugs.jpeg" alt="" class="img_logos" style="position: absolute; left: 90px; top: 1480px;" ></a>
+                    <a href="https://www.starbucks.com/menu/merchandise/other"> <img src="./Imagens/Nova pasta/others.jpeg" alt="" class="img_logos" style="position: absolute; left: 450px; top: 1480px;" ></a>
+                
+
+
+                  <a href="https://www.starbucks.com/menu/merchandise/cold-cups" id="cold_cups" style="text-decoration: none;" class="main_menu_options">Cold Cups</a>
+                  <a href="https://www.starbucks.com/menu/merchandise/tumblers" id="tumblers" style="text-decoration: none;" class="main_menu_options">Tumblers</a>
+                  <a href="https://www.starbucks.com/menu/merchandise/mugs" id="mugs" style="text-decoration: none;" class="main_menu_options">Mugs</a>
+                  <a href="https://www.starbucks.com/menu/merchandise/other" id="others" style="text-decoration: none;" class="main_menu_options">Other</a>
+                </section>
+            
+        </div>
+
+        <div id="menu_lists">
+            <h2 id="menu_dr">Drinks</h2>
+                <section>
+                    <ul style="list-style:none; background-color: transparent; position: absolute; top: 0px; width: 250px;"" >
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Oleato™</li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Hot Coffes</li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Hot Teas</li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list"> Hot Drinks</li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Frappuccino <br>Blended Beverages</li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Cold Coffes</li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Iced Teas </li></a>
+                        <a href="" style="text-decoration: none;"><li class="drinks_list">Cold Drinks</li></a>
+                    </ul>
+                </section>   
+            
+                <section>
+                <h2 id="menu_fo">Food</h2>
+                    <ul style="list-style: none; background-color: transparent; height: 300px; position: absolute; top: 460px; width: 250px;" >
+                        <a href="" style="text-decoration: none;"><li class="food_list">Hot Breakfast</li></a>
+                        <a href="" style="text-decoration: none;"><li class="food_list">Outmeal & Yogurt</li></a>
+                        <a href="" style="text-decoration: none;"><li class="food_list">Bakery</li></a>
+                        <a href="" style="text-decoration: none;"><li class="food_list">Lunch</li></a>
+                        <a href="" style="text-decoration: none;"><li class="food_list">Snacks & Sweets</li></a>
+                    </ul>
+                </section> 
+
+                <section>
+                    <h2 id="menu_ahc">At Home Coffe</h2>
+                        <ul style="list-style: none; background-color: transparent;position: absolute; top: 700px; width: 250px;"">
+                            <a href="" class="two_ahc"><li>Whole Bean </li></a>
+                            <a href="" class="two_ahc"><li>VIA® Instant</li></a>
+                        </ul>
+                </section>
+
+                <section>
+                    <h2 id="menu_merch">Merchandise</h2>
+                    <ul style="list-style: none; background-color:transparent;position: absolute; top: 820px; width: 250px;"" >
+                      <a href="" class="merch_products" style="text-decoration: none;"><li>Cold Cups</li></a>
+                      <a href="" class="merch_products" style="text-decoration: none;"><li>Tumblers</li></a>
+                      <a href="" class="merch_products" style="text-decoration: none;"><li>Mugs</li></a>
+                      <a href="" class="merch_products" style="text-decoration: none;"><li>Others</li></a>
+                    </ul>
+                  </section>-
+        </div>
+
+        
+        <div id="final_page" style="width: 100%; height: 500px;">
+            <svg width="1250px" height="20px" id="svg_risco5">
+                <rect x="0" y="18" width="1500" height="2" fill="rgba(211, 211, 211, 0.800)" />
+            </svg>
+            <h4 id="About" style="position: absolute; left: 150px; top: 60px;">About Us</h4>
+                <ul style="list-style: none; position: absolute;" class="ul_lists">
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Nossa empresa</li></a>
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Nosso café</li></a>
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Stories and News</li></a>
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Starbucks Archive</li></a>
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Investor Relations</li></a>
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Costumer Service</li></a>
+                    <a href="" class="about_us" style="text-decoration: none;"><li>Contact</li></a>
+                </ul>
+
+            <h4 id="carer" style="position: absolute; left: 350px; top: 60px;">Careers</h4>
+                <ul style="list-style: none;" class="ul_lists">
+                    <a href="" class="carr" style="text-decoration: none;"><li>Culture adn Values</li></a>
+                    <a href="" class="carr" style="text-decoration: none;"><li>Inclusion, Diversity and <br>Equity</li></a>
+                    <a href="" class="carr" style="text-decoration: none;"><li>College Archievement <br>Plan</li></a>
+                    <a href="" class="carr" style="text-decoration: none;"><li>Alumni Community</li></a>
+                    <a href="" class="carr" style="text-decoration: none;"><li>U.S. Carrers</li></a>
+                    <a href="" class="carr" style="text-decoration: none;"><li>International Carrers</li></a>
+                </ul>
+
+            <h4 id="social_imp" style="position: absolute; left: 570px; top: 60px;">Social Impact</h4>
+                <ul style="list-style: none; background-color: transparent  ; position: absolute; top: 60px; left: 570px;" class="ul_lists">
+                    <a href="" class="so_impact" style="text-decoration: none;"><li>Pessoas</li></a>
+                    <a href="" class="so_impact" style="text-decoration: none;"><li>Planeta</li></a>
+                    <a href="" class="so_impact" style="text-decoration: none;"><li>Reportar impacto  <br>ambiental e social</li></a>
+                </ul>
+
+            <h4 id="fbp" style="position: absolute; left: 770px; top: 60px;">Parceiria</h4>
+                <ul style="list-style: none; position: absolute; background-color:  transparent; top: 60px; left: 770px;" class="ul_lists" >
+                    <a href="" class="fbpp" style="text-decoration: none;"><li>Landlord Support Center</li></a>
+                    <a href="" class="fbpp" style="text-decoration: none;"><li>Suppliers</li></a>
+                    <a href="" class="fbpp" style="text-decoration: none;"><li>Corporate GiftCard Sales</li></a>
+                    <a href="" class="fbpp" style="text-decoration: none;"><li>Office and Foodservice<br>Coffee</li></a>
+                </ul>
+
+                <h4 id="oap" style="position: absolute; left: 1000px; top: 60px;">Order and Pick Up</h4>
+                <ul style="list-style: none; position: absolute; background-color:  transparent; top: 60px; left: 1000px;" class="ul_lists" >
+                    <a href="" class="oap_list" style="text-decoration: none;"><li>Order on the App</li></a>
+                    <a href="" class="oap_list" style="text-decoration: none;"><li>Order on the Web</li></a>
+                    <a href="" class="oap_list" style="text-decoration: none;"><li>Devivery</li></a>
+                    <a href="" class="oap_list" style="text-decoration: none;"><li>Order and Pick Up <br>Options</li></a>
+                    <a href="" class="oap_list" style="text-decoration: none;"><li>Explore and Find Coffe <br>For Home</li></a>
+                </ul>
+
+                <svg width="1200px" height="20px" id="svg_risco5">
+                    <rect x="150" y="18" width="1100" height="2" fill="rgba(211, 211, 211, 0.800)" />
+                </svg>
+
+                <div id="apps_conect" style="position: absolute; left: 150px; bottom: -20px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="black" class="bi bi-spotify" viewBox="0 0 16 16">
+                        <a href="https://open.spotify.com/user/starbucks"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/></a>
+                        
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <a href="https://www.facebook.com/Starbucks/"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> </a>
+                        
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="black" class="bi bi-pinterest" viewBox="0 0 16 16">
+                        <a href="https://br.pinterest.com/starbucks/"><path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/></a>
+                        
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="black" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <a href="instagram.com/starbucks"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></a>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <a href="https://www.youtube.com/starbucks"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></a>
+                        
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="black" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <a href="twitter.com/starbucks"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                      </svg></a>
+                </div>
+                <br>
+                <nav id="navegation">
+                    <a href="https://www.starbucks.com/terms/privacy-policy/" class="modified">Privacy Notice   | </a>
+                    <a href="https://www.starbucks.com/terms/starbucks-terms-of-use/" class="modified">Terms of Use   |</a>
+                    <a href="https://www.starbucks.com/personal-information" class="modified">Do Not Share My Personal Informations   |</a>
+                    <a href="https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf" class="modified">CA Supply Chain Act</a>
+            </nav>
+            <p id="last_thing">© 2023 Starbucks Coffee Company. All rights reserved - Gabriel do Carmo Batista</p>  
+            
+            <div style="position: absolute; bottom: -300px; left: 0px; background-color: rgb(255, 255, 255); color: white; height: 150px; width: 100%;">
+                APENAS DIV
+            </div>
+        </div>
+        
+        <div id="after_click">
+            <button id="xiss" onclick="SideBarAni()">
+             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-x" viewBox="0 0 16 16" style="position: absolute; right:42%;">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+              <h1 class="after_click_h1"><a href="menu.html" style="text-decoration: none;">MENU</a></h1>
+    
+              <h1 class="after_click_h1"><a href="rewards.html">RECOMPESAS</a></h1>
+    
+              <h1 class="after_click_h1"><a href="https://www.starbucks.com/store-locator">LOJAS</a></h1>
+    
+              <button id="btn_configs1"><a href="https://www.starbucks.com/account/signin?ReturnUrl=%2F">Logar</a></button>
+    
+              <button id="btn_configs2"><a href="https://www.starbucks.com/account/create">Cadastrar</a></button>
+        </div>
+
+        <div  class="footer">
+            <p id="fia">
+                <a href="https://www.starbucks.com/store-locator" style="text-decoration: none;" id="pid">Para itens disponíveis </a>
+            </p>
+            <p id="choose">
+               <a href="https://www.starbucks.com/store-locator" style="text-decoration: none;" id="escolha_loja">Escolha uma loja 
+              </a> 
+              <a href="https://www.starbucks.com/store-locator"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16" id="seta_svg">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></a>
+               <svg width="1250px" height="1000px" id="svg_risco5">
+                <rect x="400" y="80" width="250" height="2" fill="rgba(211, 211, 211, 0.800)" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16" id="bag_svg">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+              </svg>
+            </p>
+        </div>
+
+        <script>
+            var header = document.getElementById('header')
+            var navegationH = document.getElementById('after_click')
+            var showSideBar = false
+
+                function SideBarAni(){
+                    showSideBar = !showSideBar;
+                    if(showSideBar){
+                    navegationH.style.display = 'block'
+                    navegationH.style.animationName = 'showSideBar'
+                    }
+                    else{
+                        navegationH.style.display   = 'none'
+                    }
+                }
+                    
+        </script>
+
+        
+</body>
+</html>

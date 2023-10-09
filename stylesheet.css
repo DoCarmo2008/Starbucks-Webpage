@@ -1,0 +1,643 @@
+:root{
+    --colorlight:rgb(212, 187, 187);
+    --colorlight2:white;
+    --colordark:rgb(54, 48, 48);
+    --colorshadow:rgba(211, 211, 211, 0.349);
+}
+
+@font-face{
+    font-family: SodoSans-Bold;
+    src: url(./Imagens/Fonts/SoDoSans-Bold.ttf)
+}
+
+@font-face{
+    font-family: SodoSans-Regular;
+    src: url(./Imagens/Fonts/SoDoSans-Regular.ttf)
+}
+@font-face {
+    font-family: Pike;
+    src: url(./Imagens/Fonts/pike-bold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(241, 234, 234);
+    font-family: Arial;
+    color: var(--colorlight2)
+}
+
+img#logo{
+    width: 145px;
+    height: 80px;
+    position: absolute;
+    left: -15px;
+    top: 3px;
+}
+
+.header,
+.navegacao_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    background-color: var(--colorlight2);
+    box-shadow: 1px 1px 3px var(--colordark);
+    height: 90px;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: calc(100% - screenlimit);
+}
+.navegacao_header{
+    gap: 50px;
+}
+
+
+a#snavega{
+    position: absolute;
+    left: 130px;
+}
+
+
+a#tnavega{
+    position: absolute;
+    left: 200px;
+}
+
+
+.navegacao_header a{
+    text-decoration: none;
+    color: var(--colordark);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.active{
+    font-family: SoDoSans-Bold;
+    text-decoration: none;
+}
+.active:hover{
+    color: rgb(36, 201, 36);
+    text-shadow: rgb(4, 173, 4) 0.1em 0.5em 0.9em;
+    transition: 0.2s;
+}
+
+
+#logar {
+    background-color:transparent;
+    color: rgb(0, 0, 0);
+    width: 90px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: black;
+    border: 1px solid black;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    position: absolute;
+    right: 120px;
+    top: 28px;
+}
+
+#logar:hover{
+    background-color:rgba(76, 92, 76, 0.575);
+    color: black;
+    border-color: black;
+    border-width: 1px;
+
+}
+#logar a{
+    color: black    ;
+    text-decoration: none;
+}
+
+#Cadastrar {
+    background-color:black;
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: black;
+    border: 1px solid black;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    position: absolute;
+    right: 15px;
+    top: 28px;
+}
+
+#Cadastrar:hover{
+    background-color:rgba(76, 92, 76, 0.575);
+    color: black;
+    border-color: black;
+    border-width: 1px;
+
+}
+
+#Cadastrar a{
+    color: white;
+    text-decoration: none;
+}
+
+#local {
+    font-family: SoDoSans-Bold;
+    position: absolute;
+    right: 230px;
+    border: none;
+    background-color: var(--colorlight2);
+    
+}
+
+#local :hover{
+    color: rgb(19, 226, 36);
+    transition: 1.6s;
+}
+
+
+#after_click{
+    display: none;
+}
+/*  ------------------------------ CONTEUDO DA PÁGINA --------------------- */
+
+.divs_backcolors{
+    height: 400px;
+    width: 100%;
+}
+
+#div_diversidade{
+    background-color: #cd8d7d;
+}
+
+#localidade{
+    background-color: #27251F;
+}
+
+#originalidade{
+    background-color: #9eb9b3;
+}
+
+#surpresa{
+ background-color: #00704A;
+ width: 100%;
+ height: 250px;
+}
+
+#navegation{
+    font-family: SoDoSans-Regular;
+    position: absolute;
+    left: 290px;
+    top: 1790px;
+}
+
+.modified{
+    text-decoration: none;
+    font-size: 12pt;
+    color: black;
+    
+
+}
+.modified:hover{
+    text-decoration: underline;
+}
+
+/* Primeira div*/
+#last_thing{
+    color: grey;
+    font-family: SoDoSans-Regular;
+    font-size: 10pt;
+    position: absolute;
+    left: 290px;
+    top: 1830px;
+}
+
+h1#diversos{
+    font-family: SodoSans-Bold;
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+}
+p#subdive{
+    font-family: SoDoSans-Regular;
+    font-size: 20pt;
+    position: absolute;
+    color: white;
+    right: 120px;
+    top: 130px;
+    text-shadow: rgba(0, 0, 0, 0.445) 0.1em 0.1em 0.9em;
+}
+#diver{
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    font-family: SoDoSans-Regular;
+    position: absolute;
+    top: 270px;
+    right:265px;
+}
+#diver:hover{
+background-color: rgba(128, 124, 124, 0.281);
+color: rgb(255, 255, 255);
+}
+
+h1#Lojas_title{
+    font-family: SodoSans-Bold;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+}
+
+p#sublocal{
+    font-family: SoDoSans-Regular;
+    font-size: 20pt;
+    position: absolute;
+    color: white;
+    left: 100px;
+    top: 150px;
+    text-shadow: rgba(0, 0, 0, 0.445) 0.1em 0.1em 0.9em;
+}
+#locl{
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 250px;
+    left:270px;
+}
+#locl:hover{
+    background-color: rgba(128, 124, 124, 0.281);
+    #busc{
+        color:rgb(255, 255, 255);
+    }
+}
+a#busc{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans-Regular;
+}
+
+h1#Origg{
+    font-family: SodoSans-Bold;
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+}
+p#suborigin{
+    font-family: SoDoSans-Regular;
+    font-size: 20pt;
+    position: absolute;
+    color: white;
+    right: 190px;
+    top: 140px;
+    text-shadow: rgba(0, 0, 0, 0.445) 0.1em 0.1em 0.9em;
+}
+#origina{
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    height: 35px;
+    border-radius: 30px;
+    border-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 280px;
+    right:290px;
+    }
+#origina:hover{
+background-color: rgba(128, 124, 124, 0.281);
+#descoberta{
+    color:rgb(255, 255, 255);
+}
+}
+a#descoberta{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans-Regular;
+    }
+
+a#surpresas{
+    text-decoration: none;
+    color: rgb(27, 145, 27);
+}
+#surpresas:hover{
+    color: white;
+    text-shadow: lightgreen 0.1em 0.1em 0.5em;
+    transition: 1.0s;
+}
+p#text_last{
+    font-family: SoDoSans-Bold;
+    font-size: 50pt;
+    position: absolute;
+    top: 40px;
+    right: 200px;
+}
+h1#Starbuck{
+    font-family: SoDoSans-Bold;
+    font-size: 53pt;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    color: rgb(27, 145, 27);
+    text-shadow: rgba(0, 0, 0, 0.39) 0.1em 0.1em 0.3em;
+}
+
+/* COMPLEMENTOS*/ 
+.imagens_config{
+    width: 600px;
+    height: 400px;
+}
+
+#star{
+    width: 450px;
+    height: 250px;
+}
+
+
+
+/* RESIZING CONFIGURATION*/
+.list_buttons{
+    display: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+}
+@media screen and (max-width: 768px){
+    .list_buttons{
+        display: block;
+    }
+    
+
+    .navegacao_header{
+        display: none;
+}
+
+    #logar, #Cadastrar{
+        display: none;
+    }
+
+    
+
+
+
+
+/* Diversidade*/ 
+    #tiposs{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 60%;
+    }
+    #div_diversidade{
+        height: 650px;
+    }
+    #div_diversidade h1{
+        position: absolute;
+        right: 15%;
+        top: 410px;
+    }
+    #div_diversidade p{
+        position: absolute;
+        right: 20%;
+        top: 490px;
+        font-size: 15pt;
+    }
+    #diver{
+        position: absolute;
+        top: 590px;
+        right: 37%;
+    }
+
+    
+
+    /*LOCALIDADE*/
+
+    #lojas{
+        position: absolute;
+        width: 100%;
+        display: block;
+        height: 60%;
+    }
+    #localidade{
+        position: absolute;
+        height: 650px;
+        margin-top: 250px;
+    }
+    #localidade h1{
+        position: absolute;
+        top: 410px;
+        left: 20%;
+        
+    }
+    #localidade p{
+        text-align: left;
+        position: absolute;
+        top: 490px;
+        left: 15%;
+        font-size: 14pt;
+    }
+    #locl{
+        position: absolute;
+        top: 580px;
+        left: 40%;
+    }
+
+
+    /*Originalidade*/
+    #originalidade{
+        margin-top: 500px;
+        height: 580px;
+    }
+    #origin{
+        width: 100%;
+        height: 60%;
+    }
+    #originalidade h1{
+        position: absolute;
+        top: 350px;
+        left: 15%;
+    }
+    #originalidade p{
+        text-align: left;
+        position: absolute;
+        top: 425px;
+        
+        font-size: 14pt;
+    }
+    #origina{
+        position: absolute;
+        top: 520px;
+        left: 40%;
+    }
+
+
+    /*SURPRESA*/
+    #surpresa img{
+        width: 100%;
+        height: 60%;
+    }
+    #surpresa{
+        margin-top: 680px;
+        height: 600px;
+    }
+    #surpresa p{
+        text-align: left;
+        position: absolute;
+        top: 65%;
+        font-size: 25pt;
+        left: 20%;
+    }
+    #surpresa h1{
+        text-align: right;
+        position: absolute;
+        top: 80%;
+        left: 25%;
+        font-size: 25pt;
+    }
+    #the_footer{
+        margin-top: 1000px;
+    }
+    #the_footer p{
+        position: absolute;
+        top: 2850px;
+        left: 15%;
+    }
+    #the_footer a{
+        position: relative;
+        top: 1000px;
+        left: -40%;
+
+    }
+
+
+    #after_click{
+        background-color:rgb(243, 243, 243);
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 200px;
+        display: none;
+        animation-duration: 1s;
+        
+}
+    .after_click_h1{
+        font-family: SoDoSans-Bold;
+        text-decoration: none;
+        color: var(--colordark);
+        font-size: 14pt;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        top: 25px;
+        text-shadow: rgba(0, 0, 0, 0.637) 0.1em 0.2em 1.0em;
+    }
+    .after_click_h1 a{
+        text-decoration: none;
+        color: var(--colordark);
+    }
+    .after_click_h1 a:hover{
+        color: rgb(36, 201, 36);
+        text-shadow: rgb(4, 173, 4) 0.1em 0.5em 0.9em;
+        transition: 0.2s;
+    }
+
+    #btn_configs1{
+        background-color:transparent;
+        color: rgb(0, 0, 0);
+        width: 90px;
+        height: 35px;
+        border-radius: 30px;
+        border-color: black;
+        border: 1px solid black;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        position: absolute;
+        right: 26%;
+        top:30%;
+    }
+
+    #btn_configs1:hover{
+        background-color:rgba(76, 92, 76, 0.575);
+        color: black;
+        border-color: black;
+        border-width: 1px;
+
+    }
+    #btn_configs1 a{
+        color: black    ;
+        text-decoration: none;
+    }
+    }
+
+    #btn_configs2{
+        background-color:black;
+        color: rgb(255, 255, 255);
+        width: 90px;
+        height: 35px;
+        border-radius: 30px;
+        border-color: black;
+        border: 1px solid black;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        position: absolute;
+        right: 26%;
+        top: 40%;
+    }
+
+    #btn_configs2:hover{
+        background-color:rgba(76, 92, 76, 0.575);
+        color: black;
+        border-color: black;
+        border-width: 1px;
+
+    }
+
+    #btn_configs2 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
+
+    #tracinho:active{
+        color: rgb(0, 255, 0);
+    }
+    xiss:active{
+        color: red;
+    }
+    
+    
+
+@keyframes showSideBar{
+    from{display: none;}
+    to{display: block;}
+}

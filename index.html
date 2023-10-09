@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+    <div class="header" id="header">
+        <button onclick="SideBarAni()" class="list_buttons" id="tracinho">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="position: absolute; right:30px; top: 35px;">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+
+        <button id="logar">
+            <a href="https://www.starbucks.com/account/signin?ReturnUrl=%2F">Logar</a>
+        </button>
+        <button id="Cadastrar">
+            <a href="https://www.starbucks.com/account/create">Cadastrar</a>
+        </button>
+        <div class="logo_header" id="logo_header">
+           <a href="index.html"><img id="logo" src="./Imagens/download-removebg-preview (6).png" alt="Logo Starbucks"></a>
+        </div>
+        <div class="navegacao_header">
+            <button id="local">
+                <a href="https://www.starbucks.com/store-locator"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-signpost" viewBox="0 0 16 16">
+                    <path d="M7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414a1 1 0 0 0-2 0zM12.532 5l1.666 2-1.666 2H2V5h10.532z"/>
+                  </svg>
+                  <p>LOJAS</p>  
+                </a>
+            </button>
+            <a id="snavega"  href="menu.html" class="active">MENU</a>
+            <a id="tnavega" href="rewards.html" class="active">RECOMPESAS</a>
+
+        </div>
+    </div>
+    </header>
+
+    
+
+
+    <div class="divs_backcolors" id="div_diversidade" style="position: absolute; top: 120px;">
+        <img id="tiposs" src="./Imagens/tipos.jpg" alt="Diversidade Star" class="imagens_config" style="position: absolute; left: 0px">
+        <h1 id="diversos">Diversidade</h1>
+        <p class="subtexts" id="subdive">Receitas prontinhas para você<br>Faça algo de nosso menu <br>direto da sua casa</p>
+        <a href="https://www.starbucksathome.com/br/recipe/" id="iddiver">
+        <button id="diver">
+            Preparar
+        </button>
+    </a>
+    </div>
+
+    <div class="divs_backcolors" id="localidade" style="position: absolute; top: 540px;">
+        <img id="lojas" src="./Imagens/lojas.jpeg" alt="Lojas" class="imagens_config" style="position: absolute; right: 0px">
+        <h1 id="Lojas_title">Localidade</h1>
+        <p class="subtexts" id="sublocal"> Presente em muitos lugares no mundo <br>oferencendo sempre a melhor experiência</p>
+        <button id="locl">
+        <a href="https://www.starbucks.com/store-locator" id="busc">Buscar</a>
+        </button>
+    </div>
+
+    <div class="divs_backcolors" id="originalidade" style="position: absolute; top: 960px;">
+        <img id="origin" src="./Imagens/originilidade.webp" alt="Originalidade da Loja" class="imagens_config" style="position: absolute; left: 0px">
+        <h1 id="Origg">Originalidade</h1>
+        <p class="subtexts" id="suborigin">Do primeiro grão de café<br>ao último copo <br> A marca está presente</p>
+        <button id="origina">
+        <a href="https://www.starbucks.com/about-us/" id="descoberta">Descobrir</a>
+    </button>
+    </div>
+
+    <div  id="surpresa" style="position: absolute; top: 1380px;">
+        <img id="star" src="./Imagens/suprise.jpg" alt="starbucks" style="position: absolute; left: 0px">
+        <p id="text_last" class="the_last_ad">NÃO É SÓ CAFÉ <br> TUDO É <a href="https://www.starbucks.com/gift" id="surpresas"><h1 id="Starbuck" class="the_last_ad">STARBUCKS</h1></a></p>
+    </div>
+
+
+
+    <div id="after_click">
+        <button id="xiss" onclick="SideBarAni()">
+         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-x" viewBox="0 0 16 16" style="position: absolute; right:42%;">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+          <h1 class="after_click_h1"><a href="menu.html" style="text-decoration: none;">MENU</a></h1>
+
+          <h1 class="after_click_h1"><a href="rewards.html">RECOMPESAS</a></h1>
+
+          <h1 class="after_click_h1"><a href="https://www.starbucks.com/store-locator">LOJAS</a></h1>
+
+          <button id="btn_configs1"><a href="https://www.starbucks.com/account/signin?ReturnUrl=%2F">Logar</a></button>
+
+          <button id="btn_configs2"><a href="https://www.starbucks.com/account/create">Cadastrar</a></button>
+    </div>
+
+
+    <div id="the_footer">
+    <svg width="100%" height="1800">
+        <rect x="0" y="1660" width="100%" height="1px" fill="darkgrey" />
+    </svg>
+
+    <nav id="navegation">
+        <a href="https://www.starbucks.com/terms/privacy-policy/" class="modified">Privacy Notice   | </a>
+        <a href="https://www.starbucks.com/terms/starbucks-terms-of-use/" class="modified">Terms of Use   |</a>
+        <a href="https://www.starbucks.com/personal-information" class="modified">Do Not Share My Personal Informations   |</a>
+        <a href="https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf" class="modified">CA Supply Chain Act</a>
+    </nav>
+    <p id="last_thing">© 2023 Starbucks Coffee Company. All rights reserved - Gabriel do Carmo Batista</p>
+    </div>
+
+
+    <script>
+        var header = document.getElementById('header')
+
+        var navigationH = document.getElementById('after_click')
+
+        var showSideBar = false
+
+        function SideBarAni(){
+            showSideBar = !showSideBar;
+            if(showSideBar){
+            navigationH.style.display = 'block'
+            navigationH.style.animationName = 'showSideBar'
+            }
+            else{
+                navigationH.style.display   = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
