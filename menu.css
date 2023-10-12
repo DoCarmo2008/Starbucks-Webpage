@@ -637,7 +637,9 @@ a#tnavega{
 }
 
 
-
+#after_click{
+    display: none;
+}
 
 
 /* Resizing configurations */

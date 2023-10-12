@@ -26,7 +26,7 @@
 }
 
 body{
-    background-color: rgb(241, 234, 234);
+    background-color: white;
     font-family: Arial;
     color: var(--colorlight2)
 }
@@ -165,4 +165,333 @@ a#tnavega{
     transition: 1.6s;
 }
 
+#after_click{
+    display: none;
+}
+
 /*  ------------------------------ CONTEUDO DA PÁGINA --------------------- */
+
+#logo_name_star{
+    background-color: #01442e;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.61) 0.1em 0.2em 0.3em;
+    height: 50px;
+}
+#logo_h1_name{
+    font-family: SoDoSans-Regular;
+    font-size: 14pt;
+    position: absolute;
+    left: 10%;
+    top: 16%;
+}
+
+/*-----------------------------------------------------*/
+
+#img_main{
+    width: 100%;
+}
+
+#join_to_earn{
+    
+    border: none;
+    text-decoration: none;
+    border-radius: 40px;
+    width: 110px;
+    height: 30px;
+    background-color: #00704A;
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 46%;
+    font-family: SoDoSans-Bold;
+    font-size: 12pt;
+    box-shadow: rgba(0, 0, 0, 0.267) 0.1em 0.2em 0.3em;
+}
+#join_to_earn:hover{
+    background-color: #028a5c;
+    box-shadow: rgba(20, 150, 3, 0.267) 0.1em 0.2em 0.3em ;
+}
+#link_joinus{
+    font-size: 11pt;
+    color: white;
+    text-decoration: none;
+    font-family: SoDoSans-Bold;
+    text-align: center;
+}
+
+/*Conteúdo pós-imagem*/
+
+#h1_start{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 150px;
+}
+#p_start{
+    font-family: SoDoSans-Regular;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--colordark);
+}
+.bolha{
+    font-family: SoDoSans-Regular;
+    font-size: 20pt;
+    color: #00a16c ;
+    margin-top: 20px;
+    border: 2px solid #00a16c;
+    border-radius: 50px;
+    width: 35px;
+    text-align: center;  
+}
+
+#bolha_cara1{
+    position: absolute;
+    top: 170%;
+    left: 10%;
+    width: 300px;
+    height: 200px;
+}
+#bolha1{
+    position: absolute;
+    left: 45%;
+    top: -20%;
+}
+#first_step{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 14pt;
+    margin-top: 50px;
+    text-align: center;
+     
+}
+#first_step_p{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 12pt;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+#bolha_cara2{
+    position: absolute;
+    top: 170%;
+    left: 40%;
+    width: 300px;
+    height: 200px;
+}
+#bolha2{
+    position: absolute;
+    left: 45%;
+    top: -20%;
+}
+
+#sec_step{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 14pt;
+    margin-top: 50px;
+    text-align: center;
+}
+#sec_step_p{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 12pt;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#bolha_cara3{
+    position: absolute;
+    top: 170%;
+    left: 70%;
+    width: 300px;
+    height: 200px;
+}
+#bolha3{
+    position: absolute;
+    left: 45%;
+    top: -20%;
+}
+
+#t_step{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 14pt;
+    margin-top: 50px;
+    text-align: center;
+}
+#t_step_p{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 12pt;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*Pós passo a passo*/
+
+.num_stars{  
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 22pt;
+    
+}
+#nav_free{
+    position:absolute;
+    top: 240%;
+    left: 37%;
+    text-align: center;
+    
+}
+#il1{
+    border-bottom: 5px solid #01442e;
+}
+#il2:hover{
+    border-bottom: 5px solid #01442e;
+    
+}
+#fa_free{
+    background-color: #cce7de;
+    margin-top: 350px;
+    height: 200px;
+}
+#free_title{
+    text-align: center;
+    left: 38%;
+    position: absolute;
+    color: var(--colordark);
+    font-family: SoDoSans-Regular;
+    font-size: 17pt;
+    margin-top:50px;
+    
+}
+
+
+
+
+/* Resizing da página*/
+@media screen and (max-width: 768px){
+    .list_buttons{
+        display: block;
+    }
+    
+
+    .navegacao_header{
+        display: none;
+}
+
+    #logar, #Cadastrar{
+        display: none;
+    }
+
+    #after_click{
+        background-color:rgb(243, 243, 243);
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        width: 200px;
+        display: none;
+        animation-duration: 1s;
+        
+}
+    .after_click_h1{
+        font-family: SoDoSans-Bold;
+        text-decoration: none;
+        color: var(--colordark);
+        font-size: 14pt;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        top: 25px;
+        text-shadow: rgba(0, 0, 0, 0.637) 0.1em 0.2em 1.0em;
+    }
+    .after_click_h1 a{
+        text-decoration: none;
+        color: var(--colordark);
+    }
+    .after_click_h1 a:hover{
+        color: rgb(36, 201, 36);
+        text-shadow: rgb(4, 173, 4) 0.1em 0.5em 0.9em;
+        transition: 0.2s;
+    }
+
+    #btn_configs1{
+        background-color:transparent;
+        color: rgb(0, 0, 0);
+        width: 90px;
+        height: 35px;
+        border-radius: 30px;
+        border-color: black;
+        border: 1px solid black;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        position: absolute;
+        right: 26%;
+        top:30%;
+    }
+
+    #btn_configs1:hover{
+        background-color:rgba(76, 92, 76, 0.575);
+        color: black;
+        border-color: black;
+        border-width: 1px;
+
+    }
+    #btn_configs1 a{
+        color: black    ;
+        text-decoration: none;
+    }
+    }
+
+    #btn_configs2{
+        background-color:black;
+        color: rgb(255, 255, 255);
+        width: 90px;
+        height: 35px;
+        border-radius: 30px;
+        border-color: black;
+        border: 1px solid black;
+        -webkit-transition-duration: 0.4s; 
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        position: absolute;
+        right: 26%;
+        top: 40%;
+    }
+
+    #btn_configs2:hover{
+        background-color:rgba(76, 92, 76, 0.575);
+        color: black;
+        border-color: black;
+        border-width: 1px;
+
+    }
+
+    #btn_configs2 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
+
+    #tracinho:active{
+        color: rgb(0, 255, 0);
+    }
+    xiss:active{
+        color: red;
+    }
+    
+    
+
+@keyframes showSideBar{
+    from{display: none;}
+    to{display: block;}
+}
