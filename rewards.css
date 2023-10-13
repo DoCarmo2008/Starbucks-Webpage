@@ -348,13 +348,32 @@ a#tnavega{
     text-align: center;
     
 }
-#il1{
-    border-bottom: 5px solid #01442e;
-}
-#il2:hover{
-    border-bottom: 5px solid #01442e;
+.il_c{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
     
 }
+
+
+#il1{
+    color: var(--colordark);
+    font-size: 22pt;
+    font-family: SoDoSans-Bold;
+    border-bottom: 5px solid #01442e;
+
+}
+#il2, #il3, #il4, #il5{
+    color: var(--colordark);
+    font-size: 22pt;
+    font-family: SoDoSans-Bold;
+    border-bottom: 5px solid #cce7de;
+}
+#il2:active, #il3:active, #il4:active, #il5:active, #il1:active{
+    color: #00704A;
+}
+
 #fa_free{
     background-color: #cce7de;
     margin-top: 350px;
