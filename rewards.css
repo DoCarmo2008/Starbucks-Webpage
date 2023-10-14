@@ -354,6 +354,7 @@ a#tnavega{
     border-right: none;
     background: transparent;
     
+    
 }
 
 
@@ -390,6 +391,30 @@ a#tnavega{
     
 }
 
+/*Pequeno Carrosel*/
+#letter_type{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 18pt;
+    position: absolute;
+    right: 25%;
+    top: 255%;
+
+
+}
+.p_type_letter{
+    font-family: SoDoSans-Regular;
+    color: var(--colordark);
+    font-size: 12pt;
+    position: absolute;
+    right: 12%;
+    top: 265%;
+}
+.img_reso{
+    width: 30%;
+    position: absolute; 
+    left: 20%;
+}
 
 
 
