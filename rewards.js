@@ -72,4 +72,50 @@ il5.addEventListener('click', () => {
 
 });
 
-            
+
+
+
+// Colocando configurações no "Carossel"
+
+
+var firstCarrosel = document.getElementById('first_pic')
+var secCarrosel = document.getElementById('sec_pic')
+var tCarrosel = document.getElementById('t_pic')
+var fourCarrosel = document.getElementById('four_pic')
+var fiveCarrosel = document.getElementById('five_pic')
+
+il1.addEventListener('click', () => {
+    firstCarrosel.style.display = 'block'
+    secCarrosel.style.display = 'none'
+    tCarrosel.style.display = 'none'
+    fourCarrosel.style.display = 'none'
+    fiveCarrosel.style.display = 'none'
+});
+il2.addEventListener('click', () => {
+    firstCarrosel.style.display = 'none'
+    secCarrosel.style.display = 'block'
+    tCarrosel.style.display = 'none'
+    fourCarrosel.style.display = 'none'
+    fiveCarrosel.style.display = 'none'
+});
+il3.addEventListener('click', () => {
+    firstCarrosel.style.display = 'none'
+    secCarrosel.style.display = 'none'
+    tCarrosel.style.display = 'block'
+    fourCarrosel.style.display = 'none'
+    fiveCarrosel.style.display = 'none'
+});
+il4.addEventListener('click', () => {
+    firstCarrosel.style.display = 'none'
+    secCarrosel.style.display = 'none'
+    tCarrosel.style.display = 'none'
+    fourCarrosel.style.display = 'block'
+    fiveCarrosel.style.display = 'none'
+});
+il5.addEventListener('click', () => {
+    firstCarrosel.style.display = 'none'
+    secCarrosel.style.display = 'none'
+    tCarrosel.style.display = 'none'
+    fourCarrosel.style.display = 'none'
+    fiveCarrosel.style.display = 'block'
+});
